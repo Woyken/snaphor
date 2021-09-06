@@ -256,7 +256,8 @@ export async function parseImageFile(imageData: IDecodedPNG): Promise<IParsedEve
   });
 
   // googleEventUrls.forEach((e) => open(e));
-  toast(JSON.stringify(finalEvents));
+  // toast(JSON.stringify(finalEvents));
+  toast(`Done parsing`);
   return finalEvents;
 
   // TODO
