@@ -34,6 +34,8 @@ export const ClipboardProvider: React.FC = (props) => {
       // Reset previous state
       setIsProcessing(true);
       setTnputImage(undefined);
+      setParsedEvents([]);
+
       // Find the image from paste
       const files = Array.from(ev.clipboardData?.files ?? []);
       const pngFiles = files.filter((f) => f.type === 'image/png');
