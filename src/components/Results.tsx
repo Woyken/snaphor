@@ -1,12 +1,13 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { useEffect, useRef } from 'react';
 
-import { Button, Card, CardActions, CardContent, CardMedia, Container, Grid, makeStyles, Paper as div, Typography } from '@material-ui/core';
-import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import { Button, Card, CardActions, CardContent, CardMedia, Container, Grid, Paper as div, Typography } from '@mui/material';
 
 import { useClipboard } from '../hooks/clipboardContext';
+import { makeStyles } from '../theme/theme';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles()((theme, props, css) => ({
   resultsOverlay: {
     position: 'absolute',
     top: 0,
@@ -26,10 +27,10 @@ const useStyles = makeStyles({
   cardTitle: {
     fontSize: 14,
   },
-});
+}));
 
 const Results: React.FC = (props) => {
-  const styles = useStyles();
+  const { classes } = useStyles();
   const clipboardState = useClipboard();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   useEffect(() => {
@@ -46,14 +47,14 @@ const Results: React.FC = (props) => {
   // TODO handle drag and drop with "react-dropzone"
 
   return (
-    <div className={styles.resultsOverlay}>
+    <div className={classes.resultsOverlay}>
       <Container maxWidth={false}>
         <AnimatePresence>
           <Grid container>
             {!clipboardState.inputImage ? null : (
               <Grid item>
                 <motion.div
-                  className={styles.previewCardWrapper}
+                  className={classes.previewCardWrapper}
                   exit={{
                     scale: 0,
                     transition: {
@@ -86,9 +87,9 @@ const Results: React.FC = (props) => {
                         transformOrigin: 'left top',
                       }}
                     >
-                      <Card className={styles.previewCard}>
+                      <Card className={classes.previewCard}>
                         <CardMedia>
-                          <canvas className={styles.canvas} ref={canvasRef} />
+                          <canvas className={classes.canvas} ref={canvasRef} />
                         </CardMedia>
                       </Card>
                     </motion.div>

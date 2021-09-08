@@ -1,6 +1,8 @@
-import { Box, Container, makeStyles, Paper, Typography } from '@material-ui/core';
+import { Box, Container, Paper, Typography } from '@mui/material';
 
-const useStyles = makeStyles((theme) => ({
+import { makeStyles } from '../theme/theme';
+
+const useStyles = makeStyles()((theme) => ({
   title: {
     fontSize: '10em',
   },
@@ -16,12 +18,12 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const TitleText = (): JSX.Element => {
-  const styles = useStyles();
+  const { classes } = useStyles();
   // test
 
   return (
-    <Paper className={styles.wrapper}>
-      <Typography variant="h1" className={styles.title}>
+    <Paper className={classes.wrapper}>
+      <Typography variant="h1" className={classes.title}>
         CTRL + V
       </Typography>
       {/* <h1 className={styles.title}>CTRL + V</h1> */}
