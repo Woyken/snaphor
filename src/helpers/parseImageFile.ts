@@ -124,40 +124,25 @@ function findCellBoundingBox(imageData: IDecodedPNG, cellBorderColor: IColor, ra
   return { x0, x1, y0, y1 };
 }
 
-function findFirstDateCellBoundingBox(imageData: IDecodedPNG, cellBorderColor: IColor, randomPixelX: number, knownCellWhiteSpaceY: number) {
+function findFirstDateCellBoundingBox(imageData: IDecodedPNG, hourCellWidth: number, cellBorderColor: IColor, randomPixelX: number, knownCellWhiteSpaceY: number) {
   // Basically find double line vertical and horizontal
   let zeroBorderX = randomPixelX;
-  let lastLineMatch = false;
+  let countBeweenBorders = 0;
+  // Find cell longer than hour cell
   while (zeroBorderX > 0) {
     zeroBorderX -= 1;
     const cellColor = getColorAt(imageData, zeroBorderX, knownCellWhiteSpaceY);
-    if (areColorsEqual(cellBorderColor, cellColor)) {
-      if (lastLineMatch) {
-        zeroBorderX -= 1;
-        break;
-      }
-      lastLineMatch = true;
-    } else {
-      lastLineMatch = false;
+    if (countBeweenBorders > hourCellWidth * 1.5) {
+      break;
     }
-  }
-  let zeroBorderY = knownCellWhiteSpaceY;
-  lastLineMatch = false;
-  while (zeroBorderY > 0) {
-    zeroBorderY -= 1;
-    const cellColor = getColorAt(imageData, zeroBorderX, zeroBorderY);
     if (areColorsEqual(cellBorderColor, cellColor)) {
-      if (lastLineMatch) {
-        zeroBorderY += 3;
-        break;
-      }
-      lastLineMatch = true;
+      countBeweenBorders = 0;
     } else {
-      lastLineMatch = false;
+      countBeweenBorders += 1;
     }
   }
 
-  return findCellBoundingBox(imageData, cellBorderColor, zeroBorderX, zeroBorderY);
+  return findCellBoundingBox(imageData, cellBorderColor, zeroBorderX, knownCellWhiteSpaceY);
 }
 
 async function ocrImage(imageData: ImageData) {
@@ -193,7 +178,7 @@ export async function parseImageFile(imageData: IDecodedPNG): Promise<IParsedEve
   const hourCellWidth = hourCellWidthAndBorderColor.width;
   const cellBorderColor = hourCellWidthAndBorderColor.borderColor;
 
-  const firstDateCell = findFirstDateCellBoundingBox(imageData, cellBorderColor, knownCellWhiteSpaceX, knownCellWhiteSpaceY);
+  const firstDateCell = findFirstDateCellBoundingBox(imageData, hourCellWidth, cellBorderColor, knownCellWhiteSpaceX, knownCellWhiteSpaceY);
 
   const firstCellPng = new ImageData(firstDateCell.x1 - firstDateCell.x0, firstDateCell.y1 - firstDateCell.y0);
 
