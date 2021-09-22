@@ -194,8 +194,15 @@ export async function parseImageFile(imageData: IDecodedPNG): Promise<IParsedEve
   }
   toast(`Figuring out the dates...`);
   const parsedDateText = await ocrImage(firstCellPng);
-  toast(`Found first date "${parsedDateText}"`);
-  const firstCellDate = new Date(parsedDateText);
+  toast(`Found first date cell text "${parsedDateText}"`);
+  const parsedDateTextMatch = parsedDateText.match(/(\d\d\d\d)-?(\d\d)-?(\d\d)/);
+  if (!parsedDateTextMatch) {
+    toast(`Invalid date can't parse...`);
+    throw new Error('Invalid date cell');
+  }
+  const fixedDateStr = `${parsedDateTextMatch[1]}-${parsedDateTextMatch[2]}-${parsedDateTextMatch[3]}`;
+  const firstCellDate = new Date(fixedDateStr);
+  toast(`First date cell text as Date: "${firstCellDate}"`);
 
   const dateCellHeight = firstDateCell.y1 - firstDateCell.y0 + 1;
 
