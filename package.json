@@ -16,6 +16,8 @@
     "pretest": "yarn lint:fix",
     "test": "jest --colors --passWithNoTests",
     "posttest": "npx http-server coverage/lcov-report",
+    "prevalidate": "npm install && npm run build",
+    "validate": "jest",
     "test:watch": "yarn test --collectCoverage=false --watch",
     "prepare": "husky install"
   },
