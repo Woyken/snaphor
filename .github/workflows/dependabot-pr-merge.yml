@@ -2,6 +2,9 @@ name: Approve dependabot PR
 on:
   pull_request:
     branches: [ master ]
+  check_suite:
+    types:
+      - completed
 
 permissions:
   pull-requests: write
