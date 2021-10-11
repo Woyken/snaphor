@@ -16,7 +16,7 @@ jobs:
     steps:
       - name: Complete PR
         if: ${{ github.actor == 'dependabot[bot]' || github.actor == 'renovate[bot]' || github.actor == github.repository_owner }}
-        run: gh pr merge --auto --merge "$PR_URL"
+        run: gh pr merge --auto --delete-branch --merge "$PR_URL"
         env:
           PR_URL: ${{github.event.pull_request.html_url}}
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
