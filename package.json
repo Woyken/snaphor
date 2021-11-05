@@ -28,7 +28,7 @@
     "@mui/icons-material": "5.0.5",
     "@mui/material": "5.0.6",
     "fast-png": "5.0.4",
-    "framer-motion": "5.2.0",
+    "framer-motion": "5.2.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-router-dom": "6.0.0",
