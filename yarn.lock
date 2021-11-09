@@ -623,7 +623,7 @@
     "@emotion/weak-memoize" "^0.2.5"
     hoist-non-react-statics "^3.3.1"
 
-"@emotion/serialize@^1.0.2":
+"@emotion/serialize@*", "@emotion/serialize@^1.0.2":
   version "1.0.2"
   resolved "https://registry.npmjs.org/@emotion/serialize/-/serialize-1.0.2.tgz"
   integrity sha512-95MgNJ9+/ajxU7QIAruiOAdYNjxZX7G2mhgrtDWswA21VviYIRP1R5QilZ/bDY42xiKsaktP4egJb3QdYQZi1A==
@@ -655,7 +655,7 @@
   resolved "https://registry.npmjs.org/@emotion/unitless/-/unitless-0.7.5.tgz"
   integrity sha512-OWORNpfjMsSSUBVrRBVGECkhWcULOAJz9ZW8uK9qgxD+87M7jHRcvh/A96XXNhXTLmKcoYSQtBEX7lHMO7YRwg==
 
-"@emotion/utils@^1.0.0":
+"@emotion/utils@*", "@emotion/utils@^1.0.0":
   version "1.0.0"
   resolved "https://registry.npmjs.org/@emotion/utils/-/utils-1.0.0.tgz"
   integrity sha512-mQC2b3XLDs6QCW+pDQDiyO/EdGZYOygE8s5N5rrzjSI4M3IejPE/JPndCBwRT9z982aqQNi6beWs1UeayrQxxA==
@@ -4836,10 +4836,13 @@ tslib@^2.1.0:
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.3.1.tgz"
   integrity sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==
 
-tss-react@2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/tss-react/-/tss-react-2.0.2.tgz#0bc1738f3ea69002e950b9766642dd02804f9aa7"
-  integrity sha512-9jIe3nzDGaDx8dT+Bv/Vo0xoJ3k/AEdkZa38YwkVr3mI2J/0VxG9Jy78KoL8vZJ91Qd4dBl9Vvju2v0mqQ3Fag==
+tss-react@2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/tss-react/-/tss-react-2.0.3.tgz#004d100a8b4222111b7a95b4da10c6eac6a1337a"
+  integrity sha512-Zb+NSLVU8XtUOf6BspETgu6GEeH/5jy2YrWXbL/e8KaXL3UmfO8L9I9ZR1XY6KWzCSLW+PauSVku/TMyCKKRFQ==
+  dependencies:
+    "@emotion/serialize" "*"
+    "@emotion/utils" "*"
 
 tsutils@^3.21.0:
   version "3.21.0"
