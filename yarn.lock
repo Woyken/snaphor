@@ -4471,10 +4471,10 @@ tslib@^2.1.0:
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.3.1.tgz"
   integrity sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==
 
-tss-react@2.0.3:
-  version "2.0.3"
-  resolved "https://registry.npmjs.org/tss-react/-/tss-react-2.0.3.tgz"
-  integrity sha512-Zb+NSLVU8XtUOf6BspETgu6GEeH/5jy2YrWXbL/e8KaXL3UmfO8L9I9ZR1XY6KWzCSLW+PauSVku/TMyCKKRFQ==
+tss-react@2.0.4:
+  version "2.0.4"
+  resolved "https://registry.npmjs.org/tss-react/-/tss-react-2.0.4.tgz"
+  integrity sha512-2OIQT4hTSr0GaIXBCchrSlZQzJGDQXKKBLdEP5v50fULxgwutnrvJg0CvwiXnqA1AfvpkvtFlQhfz0JolYgCEw==
   dependencies:
     "@emotion/serialize" "*"
     "@emotion/utils" "*"
