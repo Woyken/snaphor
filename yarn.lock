@@ -4470,11 +4470,6 @@ ts-jest@27.1.1:
     semver "7.x"
     yargs-parser "20.x"
 
-tsafe@^0.8.1:
-  version "0.8.1"
-  resolved "https://registry.npmjs.org/tsafe/-/tsafe-0.8.1.tgz"
-  integrity sha512-EfPjxQHzndQAV/uh0SMGP26Wg3dCuaw8dRv2VPEuGHen5qzg2oqsMvZw2wkQFkiMisZq2fm95m5lheimW2Fpvg==
-
 tsconfig-paths@^3.11.0:
   version "3.11.0"
   resolved "https://registry.npmjs.org/tsconfig-paths/-/tsconfig-paths-3.11.0.tgz"
@@ -4495,14 +4490,13 @@ tslib@^2.1.0:
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.3.1.tgz"
   integrity sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==
 
-tss-react@3.0.1:
-  version "3.0.1"
-  resolved "https://registry.npmjs.org/tss-react/-/tss-react-3.0.1.tgz"
-  integrity sha512-JFwUdLTOkfIg4ySwrkJxkkUumiRU3WjoPD836/UkKTtlQ8sLsgqL+ba6df6P64YIDmEJiTAsmxnpcG5rwiLzOg==
+tss-react@3.0.2:
+  version "3.0.2"
+  resolved "https://registry.npmjs.org/tss-react/-/tss-react-3.0.2.tgz"
+  integrity sha512-zIWQB1C/blPnXW05jfSvLwKQYBKc3qK2XQuEG1/qHsCeH1xokvxHHNwFRl570sW1oOFV9Ybb4JE4POJZ0eSWiA==
   dependencies:
     "@emotion/serialize" "*"
     "@emotion/utils" "*"
-    tsafe "^0.8.1"
 
 tsutils@^3.21.0:
   version "3.21.0"
