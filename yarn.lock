@@ -2376,10 +2376,10 @@ form-data@^3.0.0:
     combined-stream "^1.0.8"
     mime-types "^2.1.12"
 
-framer-motion@5.4.4:
-  version "5.4.4"
-  resolved "https://registry.npmjs.org/framer-motion/-/framer-motion-5.4.4.tgz"
-  integrity sha512-R2IE9EdmsKpliqyA+6U7biRnLdAHBXh510oFZLLWg5ZbFQYg1UsSLCZD3AXWFLQxOKn0C6ohZb7y0R9XpsriFA==
+framer-motion@5.4.5:
+  version "5.4.5"
+  resolved "https://registry.npmjs.org/framer-motion/-/framer-motion-5.4.5.tgz"
+  integrity sha512-OjKfSMO22a9bTedhQ4diwZWCcmwoZmfrkalv4adhHTH2/cXa2eoFAmmPzs6aNpENbMrn47YmlWGwZtYNycXFLg==
   dependencies:
     framesync "6.0.1"
     hey-listen "^1.0.8"
