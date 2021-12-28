@@ -4577,10 +4577,10 @@ vite-react-jsx@1.1.2:
     "@babel/plugin-transform-react-jsx" "^7.14.3"
     resolve "^1.20.0"
 
-vite@2.7.8:
-  version "2.7.8"
-  resolved "https://registry.npmjs.org/vite/-/vite-2.7.8.tgz"
-  integrity sha512-NOgvRtXUq4/7srE2cTQ2IU1oERdGq2njVOlZtgRrjMO+PPJpncd61/AUzxzZklQ1zBkiWXEVrw3Csq0Sbgr0rQ==
+vite@2.7.9:
+  version "2.7.9"
+  resolved "https://registry.npmjs.org/vite/-/vite-2.7.9.tgz"
+  integrity sha512-CyopIJIRrc26Wnbkch5BCHFhQodzeV4jjSegLAEw1RImvXSuoOo2SfpEW9zRVi188WmjJwCqCaoG25C0r4nekw==
   dependencies:
     esbuild "^0.13.12"
     postcss "^8.4.5"
