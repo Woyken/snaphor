@@ -365,7 +365,7 @@
     source-map "^0.5.7"
     stylis "4.0.13"
 
-"@emotion/cache@^11.7.1":
+"@emotion/cache@*", "@emotion/cache@^11.7.1":
   version "11.7.1"
   resolved "https://registry.npmjs.org/@emotion/cache/-/cache-11.7.1.tgz"
   integrity sha512-r65Zy4Iljb8oyjtLeCuBH8Qjiy107dOYC6SJq7g7GV5UCQWMObY4SJDPGFjiiVpPrOJ2hmJOoBiYTC7hwx9E2A==
@@ -4463,11 +4463,12 @@ tslib@^2.1.0:
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.3.1.tgz"
   integrity sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==
 
-tss-react@3.4.2:
-  version "3.4.2"
-  resolved "https://registry.npmjs.org/tss-react/-/tss-react-3.4.2.tgz"
-  integrity sha512-U8WoOeMQYo7/CbUsUnYOavsVn1zxiVePw6q4GJHkRZndS0iOzK/hDXjuVvhTm2VXpFxFh3TPmAwWFCeWmsLvAg==
+tss-react@3.5.0:
+  version "3.5.0"
+  resolved "https://registry.npmjs.org/tss-react/-/tss-react-3.5.0.tgz"
+  integrity sha512-kJIYEIsXe3JOJcJjpAHC3WChK4/I0KxCByZir39iHfTyvvVqLh7y66K7sihilYNMXI0XYALfyuf8LGv5qvIm9g==
   dependencies:
+    "@emotion/cache" "*"
     "@emotion/serialize" "*"
     "@emotion/utils" "*"
 
