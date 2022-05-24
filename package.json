@@ -34,7 +34,7 @@
     "react-router-dom": "6.3.0",
     "react-toastify": "9.0.1",
     "tesseract.js": "2.1.5",
-    "tss-react": "3.6.2"
+    "tss-react": "3.7.0"
   },
   "devDependencies": {
     "@babel/core": "7.18.0",
