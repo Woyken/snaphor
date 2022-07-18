@@ -1024,7 +1024,7 @@
   resolved "https://registry.npmjs.org/@types/node/-/node-16.7.10.tgz"
   integrity sha512-S63Dlv4zIPb8x6MMTgDq5WWRJQe56iBEY0O3SOFA9JrRienkOVDXSXBjjJw6HTNQYSE2JI6GMCR6LVbIMHJVvA==
 
-"@types/pako@^1.0.1":
+"@types/pako@^1.0.2":
   version "1.0.2"
   resolved "https://registry.npmjs.org/@types/pako/-/pako-1.0.2.tgz"
   integrity sha512-8UJl2MjkqqS6ncpLZqRZ5LmGiFBkbYxocD4e4jmBqGvfRG1RS23gKsBQbdtV9O9GvRyjFTiRHRByjSlKCLlmZw==
@@ -2378,14 +2378,14 @@ fast-levenshtein@^2.0.6, fast-levenshtein@~2.0.6:
   resolved "https://registry.npmjs.org/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz"
   integrity sha1-PYpcZog6FqMMqGQ+hR8Zuqd5eRc=
 
-fast-png@5.0.4:
-  version "5.0.4"
-  resolved "https://registry.npmjs.org/fast-png/-/fast-png-5.0.4.tgz"
-  integrity sha512-vTNj6yixRnclW6sTlCeH6sNRLBOhM5ITmlo1LSU5ojKEc2e9kZkqXPo2xzBxKb61MBCXRXBcr8qJztOHr2O6WQ==
+fast-png@6.1.0:
+  version "6.1.0"
+  resolved "https://registry.npmjs.org/fast-png/-/fast-png-6.1.0.tgz"
+  integrity sha512-v8e/40RKZbE1mALigoqBOkYnemCVSMmVlGSz8fawZAZg5UQ9OZeR00L++CPvrhIGm2F6TxV5u9lbWD0oOJHcCw==
   dependencies:
-    "@types/pako" "^1.0.1"
-    iobuffer "^5.0.2"
-    pako "^2.0.2"
+    "@types/pako" "^1.0.2"
+    iobuffer "^5.0.4"
+    pako "^2.0.4"
 
 fastq@^1.6.0:
   version "1.13.0"
@@ -2786,10 +2786,10 @@ internal-slot@^1.0.3:
     has "^1.0.3"
     side-channel "^1.0.4"
 
-iobuffer@^5.0.2:
-  version "5.0.3"
-  resolved "https://registry.npmjs.org/iobuffer/-/iobuffer-5.0.3.tgz"
-  integrity sha512-0SNk4hbHVXx9oE27vTJY+oiI0txkhBdQV12RvILd/7XuIhBZ0TkImq5EnhFYCcRcDff8jpFhZ9C2Sg+NIo3ZMQ==
+iobuffer@^5.0.4:
+  version "5.1.0"
+  resolved "https://registry.npmjs.org/iobuffer/-/iobuffer-5.1.0.tgz"
+  integrity sha512-2BYQoYadP3FkVPfqGxs4WO6z3HWGZokJfIkgOARn4P4ipVQCHJnPyva7rJLVmnRA7XTk8ZoLwutuutGeMpu3PA==
 
 is-arrayish@^0.2.1:
   version "0.2.1"
@@ -3847,7 +3847,7 @@ p-try@^2.0.0:
   resolved "https://registry.npmjs.org/p-try/-/p-try-2.2.0.tgz"
   integrity sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==
 
-pako@^2.0.2:
+pako@^2.0.4:
   version "2.0.4"
   resolved "https://registry.npmjs.org/pako/-/pako-2.0.4.tgz"
   integrity sha512-v8tweI900AUkZN6heMU/4Uy4cXRc2AYNRggVmTR+dEncawDJgCdLMximOVA2p4qO57WMynangsfGRb5WD6L1Bg==
