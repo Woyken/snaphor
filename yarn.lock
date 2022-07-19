@@ -4056,10 +4056,10 @@ react-router@6.3.0:
   dependencies:
     history "^5.2.0"
 
-react-toastify@9.0.6:
-  version "9.0.6"
-  resolved "https://registry.npmjs.org/react-toastify/-/react-toastify-9.0.6.tgz"
-  integrity sha512-ISwZx8o+FmlT9mHuK/vJP3m3K6VOZR3i9W40xod/xxxNutIJHRBPE1AZa5lJFjzwMUURXnkHg1F1E672fJMNJA==
+react-toastify@9.0.7:
+  version "9.0.7"
+  resolved "https://registry.npmjs.org/react-toastify/-/react-toastify-9.0.7.tgz"
+  integrity sha512-UG5P/2F/fYdbK+v3XRWHM6xfMkWeLM+k2swKvwU8oO9DXx31GkeoH7Z6slBTkavZ0VjoQ+n/YD6xOBqEwN7HRg==
   dependencies:
     clsx "^1.1.1"
 
